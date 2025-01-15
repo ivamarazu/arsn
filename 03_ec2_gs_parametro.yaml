@@ -42,6 +42,7 @@ Resources:
       SecurityGroupIds:
         - !Ref MySecurityGroup
       SubnetId: !Ref PublicSubnet
+      PrivateIpAddress: "11.3.0.11"
     
   
   MySecurityGroup:
