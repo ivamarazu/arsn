@@ -42,7 +42,7 @@ Resources:
       SecurityGroupIds:
         - !Ref MySecurityGroup
       SubnetId: !Ref MyPublicSubnet
-      PrivateIpAddress: "11.3.0.10"
+    
   
   MySecurityGroup:
     Type: "AWS::EC2::SecurityGroup"
