@@ -25,7 +25,7 @@ Resources:
   PublicSubnet:
     Type: "AWS::EC2::Subnet"
     Properties:
-      VpcId: !Ref VPC-Ivan
+      VpcId: !Ref VPC
       CidrBlock: "11.3.0.0/24"
       MapPublicIpOnLaunch: true
       AvailabilityZone: !Select [0, !GetAZs ]
@@ -48,7 +48,7 @@ Resources:
     Type: "AWS::EC2::SecurityGroup"
     Properties:
       GroupDescription: "Permitir acceso SSH"
-      VpcId: !Ref VPC-Ivan
+      VpcId: !Ref VPC
       SecurityGroupIngress:
         - IpProtocol: "tcp"
           FromPort: 22
