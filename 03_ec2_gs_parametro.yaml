@@ -42,6 +42,7 @@ Resources:
       SecurityGroupIds:
         - !Ref MySecurityGroup
       SubnetId: !Ref MyPublicSubnet
+      PrivateIpAddress: "10.0.0.10/24"
   
   MySecurityGroup:
     Type: "AWS::EC2::SecurityGroup"
