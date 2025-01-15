@@ -41,7 +41,7 @@ Resources:
       ImageId: !Ref ImageId  # Usar el parámetro ImageId
       SecurityGroupIds:
         - !Ref MySecurityGroup
-      SubnetId: !Ref MyPublicSubnet
+      SubnetId: !Ref PublicSubnet
     
   
   MySecurityGroup:
